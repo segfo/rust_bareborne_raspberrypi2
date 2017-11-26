@@ -1,0 +1,11 @@
+[package]
+name = "rustberrypi"
+version = "0.1.0"
+authors = ["segfo <k.segfo@gmail.com>"]
+
+[dependencies]
+rlibc = "1.0"
+compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins" }
+
+[profile.dev]
+panic = "abort"
